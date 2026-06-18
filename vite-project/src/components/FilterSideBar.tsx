@@ -5,13 +5,12 @@ import type {Filters} from "../types/filters.ts";
 
 interface FilterProps {
     showFilters: boolean;
-    filters: Filters;
     setShowFilters: Dispatch<SetStateAction<boolean>>;
     setFilters: Dispatch<SetStateAction<Filters>>;
 }
 
 export default function FilterSideBar(filterProps: FilterProps) {
-    const { showFilters, setShowFilters, filters, setFilters } = filterProps;
+    const { showFilters, setShowFilters, setFilters } = filterProps;
 
     const handleClearFilters = () => {
         setFilters({ currencyBase: undefined, currencyQuote: undefined, status: undefined, actionableOnly: false });
