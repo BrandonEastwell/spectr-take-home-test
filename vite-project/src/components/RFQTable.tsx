@@ -25,7 +25,7 @@ export function RFQTable({ loading, rfqs, acceptingRfqId, onAccept }: RFQTablePr
                 <th scope="col" className="text-left p-2">Expiry</th>
                 <th scope="col" className="text-left p-2">Status</th>
                 <th scope="col" className="text-left p-2">Last Updated</th>
-                <th scope="col" className="text-left p-2 min-w-37.5">Action</th>
+                <th scope="col" className="text-left p-2 min-w-37.5"></th>
             </tr>
             </thead>
             <tbody>
@@ -59,7 +59,7 @@ export function RFQTable({ loading, rfqs, acceptingRfqId, onAccept }: RFQTablePr
                                     type="button"
                                     onClick={() => onAccept(rfq)}
                                     aria-label={`Accept quote for ${rfq.currencyPair}`}
-                                    className="rounded-md bg-primary px-4 py-2 text-white hover:opacity-90 not-disabled:cursor-pointer disabled:opacity-50">
+                                    className="rounded-md bg-primary px-4 py-2 text-white text-sm hover:opacity-90 not-disabled:cursor-pointer disabled:opacity-50">
                                 {acceptingRfqId === rfq.id ? "Accepting..." : "Accept Quote"}
                             </button>
                         </td>

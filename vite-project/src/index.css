@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -20,6 +21,8 @@
     --color-status-accepted: #10b981;
     --color-status-rejected: #ef4444;
     --color-status-expired: #f59e0b;
+
+    --font-display: "TASA Orbiter", sans-serif;
 }
 
 @keyframes slide-in-from-left {

@@ -92,7 +92,7 @@ function App() {
     }, [loading, rfqs.length, sortedRfqs.length]);
 
     return (
-        <main className="relative min-h-screen max-w-screen md:place-items-center bg-linear-to-r from-background to-surface text-text-primary">
+        <main className="relative min-h-screen max-w-screen md:place-items-center bg-linear-to-r from-background to-surface text-text-primary font-display">
             <FilterSideBar showFilters={showFilters} setShowFilters={setShowFilters} filters={filters} setFilters={setFilters} />
             {selectedRfq && (
                 <AcceptQuoteModal
@@ -103,7 +103,7 @@ function App() {
                 />
             )}
             <section className="mx-auto p-2" aria-labelledby="page-heading">
-                <h1 id="page-heading" className="text-2xl font-bold mb-4">Live Quote Blotter</h1>
+                <h1 id="page-heading" className="text-3xl font-extrabold mb-4">Live Quote Blotter</h1>
                 <p id="quote-status" role="status" aria-live="polite" className="sr-only">
                     {quoteStatusMessage}
                 </p>
